@@ -22,49 +22,11 @@ public class MainActivity extends ActionBarActivity {
         final Button btn_build = (Button) findViewById(R.id.button_build);
         final Button btn_reader = (Button) findViewById(R.id.button_reader);
         final Button btn_capstone = (Button) findViewById(R.id.button_capstone);
+    }
 
-        btn_spotify.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                Toast toast= Toast.makeText(getApplicationContext(), "This button will launch " + btn_spotify.getText(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        btn_scores.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                Toast toast= Toast.makeText(getApplicationContext(), "This button will launch " + btn_scores.getText(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        btn_library.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                Toast toast= Toast.makeText(getApplicationContext(), "This button will launch " + btn_library.getText(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        btn_build.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                Toast toast= Toast.makeText(getApplicationContext(), "This button will launch " + btn_build.getText(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        btn_reader.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                Toast toast= Toast.makeText(getApplicationContext(), "This button will launch " + btn_reader.getText(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        btn_capstone.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v){
-                Toast toast= Toast.makeText(getApplicationContext(), "This button will launch " + btn_capstone.getText(), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
+    public void clickOnBtn(View view) {
+        Button btn = (Button) view;
+        showToast(getResources().getString(R.string.main_menu_toast) + " " + (CharSequence)btn.getText());
     }
 
     @Override
@@ -87,5 +49,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    void showToast(String s) {
+        Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
     }
 }
