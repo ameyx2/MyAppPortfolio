@@ -48,6 +48,7 @@
                     android:layout_marginBottom="@dimen/dim10"
                     android:background="@color/orange"
                     android:onClick="clickOnBtn"
+                    android:drawableLeft="@drawable/spotify"
                     android:text="@string/spotify_btn_label" />
 
                 <Button
@@ -58,6 +59,7 @@
                     android:layout_marginBottom="@dimen/dim10"
                     android:background="@color/orange"
                     android:onClick="clickOnBtn"
+                    android:drawableLeft="@drawable/scores"
                     android:text="@string/scores_btn_label" />
 
                 <Button
@@ -67,6 +69,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="@dimen/dim10"
                     android:background="@color/orange"
+                    android:drawableLeft="@drawable/library"
                     android:onClick="clickOnBtn"
                     android:text="@string/library_btn_label" />
 
@@ -78,6 +81,7 @@
                     android:layout_marginBottom="@dimen/dim10"
                     android:background="@color/orange"
                     android:onClick="clickOnBtn"
+                    android:drawableLeft="@drawable/build"
                     android:text="@string/bigger_btn_label" />
 
                 <Button
@@ -88,6 +92,7 @@
                     android:layout_marginBottom="@dimen/dim10"
                     android:background="@color/orange"
                     android:onClick="clickOnBtn"
+                    android:drawableLeft="@drawable/reader"
                     android:text="@string/reader_btn_label" />
 
                 <Button
